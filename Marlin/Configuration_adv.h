@@ -1688,6 +1688,7 @@
  *   15000  : Maximum for TB6560 stepper driver
  *
  * Override the default value based on the driver type set in Configuration.h.
+ * SChumi -> evtl eine interessante position
  */
 //#define MAXIMUM_STEPPER_RATE 250000
 
