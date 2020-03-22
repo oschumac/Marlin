@@ -742,7 +742,11 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 2560, 93 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 400, 93 }  // schumi Threaded rod !!
+
+// // MK8 Direct Drive ohne Untersetzung
+// (200 * 16) * (1 / 1) / (7 * 3.14159) = 145.54055
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 400, 145.54 }  // schumi Threaded rod !!
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 145.54 }  // schumi Threaded rod !!
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1368,7 +1372,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#define Z_SAFE_HOMING
+//#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
