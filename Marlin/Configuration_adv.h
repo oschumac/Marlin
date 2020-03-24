@@ -2017,7 +2017,7 @@
  * To use TMC2130, TMC2160, TMC2660, TMC5130, TMC5160 stepper drivers in SPI mode
  * connect your SPI pins to the hardware SPI interface on your board and define
  * the required CS pins in your `pins_MYBOARD.h` file. (e.g., RAMPS 1.4 uses AUX3
- * pins `X_CS_PIN 53`, `Y_CS_PIN 49`, etc.).
+ * pins `X_CS_PIN 53`, `Y_CS_PIN 49`, etc.). SCHUMI Achtung !!
  * You may also use software SPI if you wish to use general purpose IO pins.
  *
  * To use TMC2208 stepper UART-configurable stepper drivers connect #_SERIAL_TX_PIN
