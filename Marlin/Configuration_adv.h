@@ -2186,11 +2186,11 @@
    * The default SW SPI pins are defined the respective pins files,
    * but you can override or define them here.
    */
-  //#define TMC_USE_SW_SPI
-  //#define TMC_SW_MOSI       -1
-  //#define TMC_SW_MISO       -1
-  //#define TMC_SW_SCK        -1
-
+  #define TMC_USE_SW_SPI
+  #define TMC_SW_SCK        4
+  #define TMC_SW_MISO       5
+  #define TMC_SW_MOSI       6
+  
   /**
    * Four TMC2209 drivers can use the same HW/SW serial port with hardware configured addresses.
    * Set the address using jumpers on pins MS1 and MS2.
